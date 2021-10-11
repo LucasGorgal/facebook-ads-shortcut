@@ -1,0 +1,19 @@
+{
+    "name": "Facebook Ads Shortcuts",
+    "description": "Advanced Facebook Ads Shortcuts",
+    "version": "1.1",
+    "manifest_version": 3,
+    "background": {
+        "service-worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://business.facebook.com/*"],
+          "js": [
+            "background.js",
+            "video-view/main.js",
+            "edit-menu/main.js"
+          ]
+        }
+      ]
+  }
